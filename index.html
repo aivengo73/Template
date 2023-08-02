@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter:wght@300;400;700;800&family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400;700&family=PT+Sans&family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Template</title>
+</head>
+
+<body>
+	<main>
+
+		<!-- ! ================================= header ========================== -->
+
+		<header class="header">
+			<div class="container">
+				<div class="header__top d-flex align-itc flex-sb">
+					<img class="header__top-logo" src="css/header/img/Logo.svg" alt="Логотип">
+					<div class="header__top-right d-flex">
+
+						<!-- !! @media (max-width: 320px) -->
+						<a class="header__top-img-link" href="tel:+79625561234">
+							<img class="header__top-img" src="css/header/img/Phone.svg" width="24" height="24" alt="">
+						</a>
+
+						<a class="header__top-link-tel" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+						<a class="header__top-link-text" href="#">Перезвоните мне</a>
+					</div>
+				</div>
+				<div class="header__center">
+					<h1 class="header__center-title">
+						Заголовок c уникальным торговым предложение по системе 4U
+					</h1>
+					<p class="header__center-text">
+						Описания предложения компании. Сайт рыбатекст поможет дизайнеру, верстальщику,
+						вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+						начинающему.
+					</p>
+					<button class="header__center-button">Подробнее</button>
+				</div>
+
+			</div>
+		</header>
+
+		<!-- ! ============================ section ad =========================== -->
+
+		<section class="ad">
+			<div class="container">
+				<div class="ad__inner">
+					<p class="ad__title">Уникальный заголовок для преимущества компании</p>
+					<p class="ad__about-us">О нас</p>
+					<p class="ad__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+						более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.
+					</p>
+					<div class="ad__items d-grid">
+						<!-- <div class="ad__items d-flex align-itc flex-sb"> -->
+						<div class="ad__item">
+							<!-- <div class="ad__item-elem"> -->
+							<div class="ad__item-text ">
+								<span class="ad__item-span d-flex align-itc">1</span>
+
+							</div>
+							<p class="ad__item-paragraph">Первое целевое преимущество</p>
+							<!-- </div> -->
+						</div>
+
+						<div class="ad__item">
+							<!-- <div class="ad__item-elem"> -->
+							<div class="ad__item-text d-flex align-itc">
+								<span class="ad__item-span d-flex align-itc">2</span>
+
+							</div>
+							<p class="ad__item-paragraph">Второе целевое преимущество</p>
+							<!-- </div> -->
+						</div>
+
+						<div class="ad__item">
+							<!-- <div class="ad__item-elem"> -->
+							<div class="ad__item-text d-flex align-itc">
+								<span class="ad__item-span d-flex align-itc">3</span>
+
+							</div>
+							<p class="ad__item-paragraph">Третье целевое преимущество</p>
+							<!-- </div> -->
+						</div>
+
+						<div class="ad__item">
+							<!-- <div class="ad__item-elem"> -->
+							<div class="ad__item-text d-flex align-itc">
+								<span class="ad__item-span d-flex align-itc">4</span>
+
+							</div>
+							<p class="ad__item-paragraph">Четвертое целевое преимущество</p>
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ! ================================== section list ========================= -->
+
+		<section class="list">
+			<div class="container">
+				<div class="list__feedback">
+					<p class="list__title">Остались вопросы?</p>
+					<p class="list__text">Оставьте номер телефона, и мы перезвоним вам</p>
+					<form class="list__form d-flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+						<label class="list__input">
+							<input class="input-name" type="text" name="name" placeholder="Ваше имя">
+						</label>
+
+						<label class="list__input">
+							<input class="input-tel" type="tel" name="phone" placeholder="Телефон" required>
+
+						</label>
+
+						<label class="list__input">
+							<input class="input-email" type="email" name="login" placeholder="E-mail">
+						</label>
+						<button class="list__btn" type="submit">позвоните мне</button>
+					</form>
+					<p class="list__text-bottom">Я даю своё
+						<a class="list__text-link" href="#">согласие</a>
+						на обработку моих персональных данных.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- !================================ footer ======================= -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner d-flex align-itc flex-sb">
+					<div class="footer__left d-flex align-itc">
+						<img class="footer__logo" src="css/footer/img/Logo.svg" alt="Логотип">
+						<p class="footer__left-text">© 2022 XXXcompany.
+							Все права защищены.
+						</p>
+					</div>
+
+					<p class="footer__center-text">Сделано Ивановым Иваном</p>
+
+					<div class="footer__right">
+
+						<!--!!  @media (max-width: 320px) -->
+
+						<a class="footer__right-img-link" href="tel:+79625561234">
+							<img class="footer__right-img" src="css/footer/img/Phone.svg" width="60" height="60"
+								alt="Телефонная трубка">
+						</a>
+						<a class="footer__link-tel" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+						<a class="footer__link-text" href="#">Перезвоните мне</a>
+					</div>
+				</div>
+			
+			</div>
+		</footer>
+
+		<section class="footer__bottom">
+			<div class="container">
+				<div class="footer__bottom-text d-flex align-itc ">
+					<p class="footer__bottom-paragraph">Сделано Ивановым Иваном</p>
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+</body>
+
+</html>
+
+<!-- --white-color: rgba(255, 255, 255, 1);
+	--grey-color: rgba(56, 58, 76, 1);
+
+color: var(--white-color);
+
+color: var(--grey-color);
+ -->

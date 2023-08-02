@@ -1,0 +1,171 @@
+.footer {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	width: 100%;
+	height: auto;
+	background-color: rgba(47, 50, 75, 1);
+}
+
+.footer__logo {
+	margin-right: 19px;
+}
+
+.footer__right-img {
+	display: none;
+}
+
+.footer__left-text,
+.footer__center-text {
+	color: var(--white-color);
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16.88px;
+}
+
+.footer__left-text {
+	width: 127px;
+}
+
+.footer__right {
+	flex-direction: column;
+	text-align: center;
+	color: var(--white-color);
+	width: 210px;
+}
+
+.footer__link-tel {
+	margin-bottom: 3px;
+	font-size: 24px;
+	line-height: 28.13px;
+	text-decoration: none;
+}
+
+.footer__link-text {
+	font-size: 16px;
+	line-height: 18.45px;
+}
+
+/* !! ========== 1024px ====== */
+
+@media screen and (max-width: 1024px) {
+	.footer {
+		padding-top: 37px;
+		padding-bottom: 49px;
+	}
+
+	.footer__logo {
+		width: 60px;
+		height: 60px;
+	}
+
+	.footer__right {
+		width: 186px;
+	}
+
+	.footer__link-tel {
+		margin-bottom: 3px;
+		font-size: 21px;
+		line-height: 24.61px;
+		text-decoration: none;
+	}
+
+	.footer__link-text {
+		font-size: 13px;
+		line-height: 15.23px;
+	}
+}
+
+/* !! ======== 768px ======*/
+
+@media screen and (max-width: 768px) {
+	.footer__center-text {
+		display: none;
+	}
+}
+
+/* !! ======== 480px ======*/
+
+@media screen and (max-width: 480px) {
+
+	.footer__right {
+	display: flex;
+	align-items: end;
+	justify-content: end;
+	}
+	.footer__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 25px;
+	}
+
+	.footer__right-img {
+		display: block;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	.footer__link-tel {
+		display: none;
+	}
+
+	.footer__link-text {
+		display: none;
+	}
+}
+
+/* !! ======== 390px ======*/
+
+@media screen and (max-width: 390px) {
+	.footer__left-text {
+		font-size: 10px;
+		font-weight: 500;
+		line-height: 12.25px;
+	}
+}
+
+/* !! ======== 320px ======*/
+
+@media screen and (max-width: 320px) {
+	.footer__logo {
+		width: 30px;
+		height: 30px;
+	}
+
+	.footer__left-text {
+		font-size: 8px;
+		font-weight: 500;
+		line-height: 11.25px;
+	}
+
+	.footer__left-text {
+		width: 87.3px;
+	}
+
+	.footer__right-img {
+		display: block;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+	}
+
+	/* .footer__right-img-link {
+		display: block;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+	} */
+
+	.footer__center-text {
+		display: none;
+	}
+
+	.footer__link-tel {
+		display: none;
+	}
+
+	.footer__link-text {
+		display: none;
+	}
+}

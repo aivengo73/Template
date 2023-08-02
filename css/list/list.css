@@ -1,0 +1,296 @@
+.list {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	width: 100%;
+	height: auto;
+	background-image: url("/../css/list/img/Background-list.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.list__feedback {
+	text-align: center;
+}
+
+.list__title {
+	margin-bottom: 17px;
+	color: var(--white-color);
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 41.02px;
+}
+
+.list__text {
+	margin-bottom: 50px;
+	color: var(--white-color);
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 25.78px;
+}
+
+.list__form {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.input-name,
+.input-tel {
+	margin-bottom: 21px;
+}
+
+.input-email {
+	margin-bottom: 50px;
+}
+
+.input-name,
+.input-tel,
+.input-email {
+	padding-left: 29px;
+	width: 423px;
+	height: 44px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 22px;
+	line-height: 25.78px;
+	border-radius: 50px;
+	background-color: transparent;
+	border: 1px solid var(--white-color);
+}
+
+.list__btn {
+	font-weight: 500;
+	line-height: 23.44px;
+	color: var(--white-color);
+	padding: 11px 38px;
+	background-color: rgba(21, 169, 203, 1);
+	border-radius: 50px;
+}
+
+.list__text-bottom,
+.list__text-link {
+	font-weight: 500;
+	line-height: 23.44px;
+}
+
+.list__text-link {
+	color: rgba(74, 118, 168, 1);
+}
+
+
+/* !! ========== 1024px ====== */
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--white-color: rgba(255, 255, 255, 1);
+		--grey-color: rgba(56, 58, 76, 1);
+	}
+
+	.list {
+		padding-top: 70px;
+		padding-bottom: 56px;
+	}
+
+	.list__title {
+		margin-bottom: 16px;
+		font-size: 32px;
+		line-height: 37.5px;
+	}
+
+	
+	.list__text {
+		margin-bottom: 50px;
+		font-size: 20px;
+		line-height: 23.44px;
+	}
+
+	.input-name,
+	.input-tel {
+		margin-bottom: 20px;
+	}
+
+	.input-email {
+		margin-bottom: 50px;
+	}
+
+	.input-name,
+	.input-tel,
+	.input-email {
+		padding-left: 23px;
+		width: 377px;
+		height: 39px;
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 23.44px;
+		border-radius: 50px;
+		background-color: transparent;
+		border: 1px solid var(--white-color);
+	}
+
+	.list__btn {
+		line-height: 23.44px;
+		color: var(--white-color);
+		font-size: 20px;
+		padding: 11px 38px;
+		background-color: rgba(21, 169, 203, 1);
+		border-radius: 50px;
+	}
+
+	.list__form {
+		margin-bottom: 30px;
+	}
+
+	.list__text-bottom,
+	.list__text-link {
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 19.92px;
+	}
+}
+
+/* !! ======== 390px ======*/
+
+@media screen and (max-width: 390px) {
+
+	:root {
+		--white-color: rgba(255, 255, 255, 1);
+		--grey-color: rgba(56, 58, 76, 1);
+	}
+	.list {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.list__title {
+		margin-bottom: 16px;
+		font-size: 30px;
+		line-height: 35.5px;
+	}
+
+	.list__text {
+		margin-bottom: 50px;
+		font-size: 16px;
+		line-height: 21.44px;
+	}
+
+	.input-name,
+	.input-tel {
+		margin-bottom: 17px;
+	}
+
+	.input-email {
+		margin-bottom: 47px;
+	}
+
+	.input-name,
+	.input-tel,
+	.input-email {
+		padding-left: 23px;
+		width: 340px;
+		height: 37px;
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 23.44px;
+		border-radius: 50px;
+		background-color: transparent;
+		border: 1px solid var(--white-color);
+	}
+
+	.list__btn {
+		line-height: 18.75px;
+		color: rgba(255, 255, 255, 1);
+		font-size: 16px;
+		padding: 10px 26px;
+		background-color: rgba(21, 169, 203, 1);
+		border-radius: 50px;
+	}
+}
+
+/* !! ======== 346px ======*/
+
+@media screen and (max-width: 346px) {
+
+	.input-name,
+	.input-tel,
+	.input-email {
+		padding-left: 23px;
+		width: 310px;
+		height: 33px;
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 23.44px;
+		border-radius: 50px;
+		background-color: transparent;
+		border: 1px solid var(--white-color);
+	}
+}
+
+
+
+/* !! ======== 320px ======*/
+
+@media screen and (max-width: 320px) {
+	.list {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.list__title {
+		margin-bottom: 10px;
+		font-size: 20px;
+		line-height: 23.44px;
+	}
+
+	.list__text {
+		margin-bottom: 35px;
+		font-size: 12px;
+		line-height: 14.06px;
+	}
+
+	.input-name,
+	.input-tel {
+		margin-bottom: 15px;
+	}
+
+	.input-email {
+		margin-bottom: 45px;
+	}
+
+	.input-name,
+	.input-tel,
+	.input-email {
+		padding-left: 29px;
+		width: 290px;
+		height: 28px;
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16.41px;
+		border-radius: 50px;
+		background-color: transparent;
+		border: 1px solid var(--white-color);
+	}
+
+	.list__btn {
+		line-height: 18.75px;
+		color: var(--white-color);
+		font-size: 16px;
+		padding: 10px 26px;
+		background-color: rgba(21, 169, 203, 1);
+		border-radius: 50px;
+	}
+
+	.list__form {
+		margin-bottom: 30px;
+	}
+
+	.list__text-bottom,
+	.list__text-link {
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 12.89px;
+	}
+}
