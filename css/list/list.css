@@ -77,6 +77,13 @@
 	color: rgba(74, 118, 168, 1);
 }
 
+.ad__item-slider-left {
+	display: none;
+}
+
+.ad__item-slider-right {
+	display: none;
+}
 
 /* !! ========== 1024px ====== */
 
@@ -97,7 +104,6 @@
 		line-height: 37.5px;
 	}
 
-	
 	.list__text {
 		margin-bottom: 50px;
 		font-size: 20px;
@@ -152,7 +158,6 @@
 /* !! ======== 390px ======*/
 
 @media screen and (max-width: 390px) {
-
 	:root {
 		--white-color: rgba(255, 255, 255, 1);
 		--grey-color: rgba(56, 58, 76, 1);
@@ -206,12 +211,13 @@
 		background-color: rgba(21, 169, 203, 1);
 		border-radius: 50px;
 	}
+
 }
+
 
 /* !! ======== 346px ======*/
 
 @media screen and (max-width: 346px) {
-
 	.input-name,
 	.input-tel,
 	.input-email {
@@ -227,8 +233,6 @@
 		border: 1px solid var(--white-color);
 	}
 }
-
-
 
 /* !! ======== 320px ======*/
 
@@ -292,5 +296,32 @@
 		font-size: 11px;
 		font-weight: 400;
 		line-height: 12.89px;
+	}
+
+	.one {
+		position: relative;
+	}
+
+	.ad__item-slider {
+		position: absolute;
+		top: 72px;
+		min-width: 280px;
+		height: auto;
+	}
+
+	.ad__item-slider-left {
+		display: block;
+	
+	}
+
+	.ad__item-slider-right {
+		display: block;
+		
+	}
+
+	.two,
+	.three,
+	.four {
+		display: none;
 	}
 }
