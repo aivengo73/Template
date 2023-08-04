@@ -93,6 +93,27 @@
 	line-height: 25.31px;
 }
 
+.ad__item-slider-left {
+	display: none;
+}
+
+.ad__item-slider-right {
+	display: none;
+}
+
+/* Слайдер */
+
+/* .topslider {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.topslider__slide-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
 /* Медиазапросы */
 
 /* !! ========== 1024px ====== */
@@ -457,5 +478,32 @@
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 23.31px;
+	}
+
+	.one {
+		position: relative;
+	}
+
+	.ad__item-slider {
+		position: absolute;
+		top: 72px;
+		min-width: 280px;
+		height: auto;
+	}
+
+	.ad__item-slider-left {
+		display: block;
+	
+	}
+
+	.ad__item-slider-right {
+		display: block;
+		
+	}
+
+	.two,
+	.three,
+	.four {
+		display: none;
 	}
 }

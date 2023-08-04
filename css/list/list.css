@@ -77,14 +77,6 @@
 	color: rgba(74, 118, 168, 1);
 }
 
-.ad__item-slider-left {
-	display: none;
-}
-
-.ad__item-slider-right {
-	display: none;
-}
-
 /* !! ========== 1024px ====== */
 
 @media screen and (max-width: 1024px) {
@@ -298,30 +290,5 @@
 		line-height: 12.89px;
 	}
 
-	.one {
-		position: relative;
-	}
-
-	.ad__item-slider {
-		position: absolute;
-		top: 72px;
-		min-width: 280px;
-		height: auto;
-	}
-
-	.ad__item-slider-left {
-		display: block;
 	
-	}
-
-	.ad__item-slider-right {
-		display: block;
-		
-	}
-
-	.two,
-	.three,
-	.four {
-		display: none;
-	}
 }
