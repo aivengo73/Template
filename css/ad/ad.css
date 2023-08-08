@@ -1,7 +1,7 @@
 .ad {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background-color: var(--white-color);
+	background-color: rgba(249, 249, 249, 1);
 }
 
 .ad__inner {
@@ -48,7 +48,9 @@
 }
 
 .ad__text {
-	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+  margin-bottom: 50px;
 	color: var(--grey-color);
 	font-size: 18px;
 	line-height: 25.31px;
@@ -67,14 +69,15 @@
 	height: auto;
 }
 
-/* //========= */
 
 .ad__item-span {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	margin-bottom: 16px;
 	width: 122px;
 	height: 122px;
-	color: var(--white-color);
+	color: #fff;
 	font-weight: 500;
 	font-size: 57px;
 	line-height: 57px;
@@ -87,32 +90,17 @@
 
 .ad__item-paragraph {
 	justify-content: center;
-	color: var(--grey-color);
+	color: #000;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 25.31px;
 }
 
-.ad__item-slider-left {
-	display: none;
-}
-
-.ad__item-slider-right {
-	display: none;
-}
-
 /* Слайдер */
 
-/* .topslider {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.wrapper {
+	display: none;
 }
-
-.topslider__slide-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 /* Медиазапросы */
 
@@ -169,7 +157,6 @@
 /* !! ===== 942px ======*/
 
 @media screen and (max-width: 942px) {
-
 	.ad__about-us {
 		margin-bottom: 30px;
 		font-size: 18px;
@@ -234,7 +221,6 @@
 /* !! ======== 768px ======*/
 
 @media screen and (max-width: 768px) {
-
 	.ad__about-us::before {
 		width: 40px;
 		height: 1.5px;
@@ -295,11 +281,9 @@
 	}
 }
 
-
 /* !! ======== 540px ======*/
 
 @media screen and (max-width: 540px) {
-
 	.ad__title {
 		margin-bottom: 35px;
 		color: var(--grey-color);
@@ -322,7 +306,6 @@
 	}
 }
 
-
 /* !! ======== 514px ======*/
 
 @media screen and (max-width: 514px) {
@@ -344,7 +327,6 @@
 /* !! ======== 480px ======*/
 
 @media screen and (max-width: 480px) {
-
 	.ad__about-us::before {
 		width: 36px;
 		height: 2px;
@@ -403,9 +385,6 @@
 		left: 28%;
 	}
 }
-
-
-
 
 /* !! ======== 346px ======*/
 
@@ -468,42 +447,95 @@
 		line-height: 16.88px;
 	}
 
-	.ad__items {
-		grid-template-rows: repeat(1, 1fr);
-		row-gap: 40px;
-	}
-
-	.ad__item-paragraph {
-		margin-bottom: 0;
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 23.31px;
-	}
-
-	.one {
-		position: relative;
-	}
-
-	.ad__item-slider {
-		position: absolute;
-		top: 72px;
-		min-width: 280px;
-		height: auto;
-	}
-
-	.ad__item-slider-left {
-		display: block;
-	
-	}
-
-	.ad__item-slider-right {
-		display: block;
-		
-	}
-
-	.two,
-	.three,
-	.four {
+	.ad__item {
 		display: none;
+	}
+
+	/* слайдер */
+
+	.wrapper {
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slider {
+		position: relative;
+		padding: 0 10px;
+		min-width: 0
+	}
+
+	.slider__item {
+		display: flex;
+		flex-direction: column;
+    width: 160px;
+		height: auto;
+		text-align: center;
+		align-items: center;
+	}
+
+	.slider__item-span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 16px;
+		width: 104px;
+		height: 104px;
+		font-size: 52px;
+		font-weight: 500;
+		line-height: 73.13px;
+		color: #fff;
+		background-image: url("../ad/img/Ellipse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: rgba(35, 199, 236, 1);
+		border-radius: 50%;
+	}
+
+	.slider__item-paragraph {
+		justify-content: center;
+		margin-bottom: 0;
+		max-width: 165px;
+		color: #000;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24.13px;
+	}
+
+	/* Ограничивающая оболочка */
+	.slick-list {
+		overflow: hidden;
+	}
+
+	/* Лента слайдов */
+	.slick-track {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.slider .slick-arrow {
+		position: absolute;
+		top: 35%;
+		width: 68px;
+		height: 68px;
+		font-size: 0;
+	}
+
+	/* Стрелка влево */
+	.slider .slick-arrow.slick-prev {
+		left: -30px;
+		background: url("/../css/ad/img/Left.svg") 0 0 / 100% no-repeat;
+	}
+
+	.slider .slick-arrow.slick-disabled {
+		opacity: 0.2;
+	}
+
+	/* Стрелка вправо */
+	.slider .slick-arrow.slick-next {
+		right: -30px;
+		background: url("/../css/ad/img/Right.svg") 0 0 / 100% no-repeat;
 	}
 }
