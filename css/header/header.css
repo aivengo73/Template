@@ -7,15 +7,20 @@
 }
 
 .header__top {
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
 	margin-bottom: 120px;
 }
 
 .header__top-logo {
-	width: 60px;
-	height: 60px;
+	width: 68px;
+	height: 68px;
 }
 
 .header__top-right {
+	position: relative;
 	flex-direction: column;
 	text-align: center;
 }
@@ -28,7 +33,7 @@
 }
 
 .header__top-link-tel {
-	margin-bottom: 3px;
+	margin-bottom: 2px;
 	font-size: 23.85px;
 	line-height: 27.95px;
 	text-decoration: none;
@@ -37,6 +42,18 @@
 .header__top-link-text {
 	font-size: 16px;
 	line-height: 18.75px;
+	text-decoration: none;
+}
+
+.header__top-link-text::after {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 131px;
+	height: 1px;
+	top: 52px;
+	left: 19%;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .header__center {
@@ -55,14 +72,18 @@
 }
 
 .header__center-text {
+	margin-bottom: 86.5px;
 	text-align: center;
 	font-size: 22px;
 	line-height: 30.94px;
-	margin-bottom: 90px;
+}
+
+.header__center-text-media {
+	display: none;
 }
 
 .header__center-button {
-	padding: 12px 48px;
+	padding: 12px 48px 12px 49px;
 	color: rgba(255, 255, 255, 1);
 	font-weight: 500;
 	line-height: 23.44px;
@@ -75,19 +96,32 @@
 /* ! ====== 1024px ======= */
 
 @media screen and (max-width: 1024px) {
-
 	:root {
 		--white-color: rgba(255, 255, 255, 1);
 		--grey-color: rgba(56, 58, 76, 1);
 	}
 
 	.header {
-		padding-top: 26px;
+		padding-top: 22px;
 		padding-bottom: 70px;
 	}
 
 	.header__top {
+		max-width: 964px;
 		margin-bottom: 70px;
+	}
+
+	.header__top-logo {
+		width: 63px;
+		height: 63px;
+	}
+
+	.header__top-right {
+		padding-top: 2px;
+	}
+
+	.header__top-img {
+		margin-bottom: 2px;
 	}
 
 	.header__top-link-tel {
@@ -102,25 +136,45 @@
 		font-weight: 400;
 	}
 
+	.header__top-link-text::after {
+		display: block;
+		position: absolute;
+		content: "";
+		width: 105px;
+		height: 1px;
+		top: 51px;
+		left: 21%;
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+
 	.header__center-title {
-		margin-bottom: 27.57px;
+		margin-bottom: 25.5px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 800px;
 		font-size: 40px;
 		font-weight: 900;
 		line-height: 46.88px;
 	}
 
 	.header__center-text {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 754px;
 		margin-bottom: 60.43px;
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 25.31px;
+	}
+
+	.header__center-button {
+		padding: 13px 48px 12px 49px;
 	}
 }
 
 /* !! ======== 540px ======*/
 
 @media screen and (max-width: 540px) {
-
 	.header__center-title {
 		margin-bottom: 27.57px;
 		font-size: 35px;
@@ -128,7 +182,6 @@
 		line-height: 46.88px;
 	}
 }
-
 
 /* !! ======== 480px ======*/
 
@@ -151,12 +204,16 @@
 /* !! ======== 390px ======*/
 
 @media screen and (max-width: 390px) {
+	.header__center-text-media {
+		display: none;
+	}
+
 	.list__btn {
-		line-height: 18.75px;
-		color: rgba(255, 255, 255, 1);
 		font-size: 16px;
+		color: rgba(255, 255, 255, 1);
 		padding: 10px 26px;
 		background-color: rgba(21, 169, 203, 1);
+		line-height: 18.75px;
 		border-radius: 50px;
 	}
 }
@@ -164,17 +221,27 @@
 /* ! ====== 320px ======= */
 
 @media (max-width: 320px) {
+	.header {
+		padding-top: 15px;
+		padding-bottom: 67px;
+		width: 320px;
+	}
+
 
 	.header__top {
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 65px;
 	}
+
 	.header__top-logo {
 		width: 30px;
 		height: 30px;
 	}
 
 	.header__top-img {
-		display: block;
+		/* display: block; */
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
@@ -188,27 +255,38 @@
 	}
 
 	.header__center-title {
-		margin-bottom: 23px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 25px;
+		color: var(--white-color);
 		font-weight: 900;
 		font-size: 20px;
 		line-height: 23.44px;
-		color: var(--white-color);
 	}
 
+
 	.header__center-text {
+		display: none;
+	}
+
+	.header__center-text-media {
+		display: block;
+		width: 287.03px;
 		margin-bottom: 54px;
+		color: var(--white-color);
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 19.69px;
-		color: var(--white-color);
 	}
 
 	.header__center-button {
-		padding: 10px 26px;
-		font-weight: 500;
-		font-style: normal;
+		margin-left: auto;
+		margin-right: auto;
 		font-size: 16px;
-		line-height: 18.75px;
+		font-weight: 500;
 		color: var(--white-color);
+		font-style: normal;
+		padding: 9px 38px;
+		line-height: 18.75px;
 	}
 }

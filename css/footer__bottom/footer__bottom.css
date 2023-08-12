@@ -27,3 +27,13 @@
 		line-height: 16.88px;
 	}
 }
+
+
+/* !! ======== 320px ======*/
+
+@media screen and (max-width: 320px) {
+	.footer-bottom {
+		padding-top: 1px;
+		padding-bottom: 0px;
+	}
+}

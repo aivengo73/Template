@@ -21,7 +21,7 @@
 
 		<header class="header">
 			<div class="container">
-				<div class="header__top d-flex align-itc flex-sb">
+				<div class="header__top d-flex align-itc">
 					<img class="header__top-logo" src="css/header/img/Logo.svg" alt="Логотип">
 					<div class="header__top-right d-flex">
 
@@ -40,9 +40,15 @@
 						Заголовок c уникальным торговым предложение по системе 4U
 					</h1>
 					<p class="header__center-text">
-						Описания предложения компании. Сайт рыбатекст поможет дизайнеру, верстальщику,
+						Описания предложения компании.Сайт рыбатекст поможет дизайнеру, верстальщику,
 						вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
 						начинающему.
+					</p>
+
+					<!-- ! @media -->
+					<p class="header__center-text-media">
+						Описания предложения компании.Сайт рыбатекст поможет дизайнеру, верстальщику,
+						вебмастеру сгенерировать несколько абзацев более.
 					</p>
 					<button class="header__center-button">Подробнее</button>
 				</div>
@@ -149,7 +155,12 @@
 			<div class="container">
 				<div class="list__feedback">
 					<p class="list__title">Остались вопросы?</p>
+					<!-- !! @media () -->
+					<p class="list__title-media">Остались вопросы?</p>
+					
 					<p class="list__text">Оставьте номер телефона, и мы перезвоним вам</p>
+					<!-- !! @media () -->
+					<p class="list__text-media">Оставьте номер телефона, и мы перезвоним вам</p>
 					<form class="list__form d-flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
 						<label class="list__input">
 							<input class="input-name" type="text" name="name" placeholder="Ваше имя">
@@ -160,7 +171,7 @@
 						<label class="list__input">
 							<input class="input-email" type="email" name="login" placeholder="E-mail">
 						</label>
-						<button class="list__btn" type="submit">позвоните мне</button>
+						<button class="list__btn" type="submit">Позвоните мне</button>
 					</form>
 					<p class="list__text-bottom">Я даю своё
 						<a class="list__text-link" href="#">согласие</a>
@@ -175,7 +186,7 @@
 
 		<footer class="footer">
 			<div class="container">
-				<div class="footer__inner d-flex align-itc flex-sb">
+				<div class="footer__inner d-flex align-itc">
 					<div class="footer__left d-flex align-itc">
 						<img class="footer__logo" src="css/footer/img/Logo.svg" alt="Логотип">
 						<p class="footer__left-text">© 2022 XXXcompany.

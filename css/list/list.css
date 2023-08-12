@@ -14,11 +14,20 @@
 
 .list__title {
 	margin-bottom: 17px;
+	margin-left: -26px;
+	margin-right: auto;
 	color: var(--white-color);
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 35px;
+	letter-spacing: 0px;
 	line-height: 41.02px;
 }
+
+.list__title-media,
+.list__text-media {
+	display: none;
+}
+
 
 .list__text {
 	margin-bottom: 50px;
@@ -37,19 +46,19 @@
 
 .input-name,
 .input-tel {
-	margin-bottom: 21px;
+	margin-bottom: 19px;
 }
 
 .input-email {
-	margin-bottom: 50px;
+	margin-bottom: 49.5px;
 }
 
 .input-name,
 .input-tel,
 .input-email {
-	padding-left: 29px;
-	width: 423px;
-	height: 44px;
+	padding-left: 28px;
+	width: 425px;
+	height: 46px;
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 22px;
 	line-height: 25.78px;
@@ -62,7 +71,7 @@
 	font-weight: 500;
 	line-height: 23.44px;
 	color: var(--white-color);
-	padding: 11px 38px;
+	padding: 12px 35px 12px 41px;
 	background-color: rgba(21, 169, 203, 1);
 	border-radius: 50px;
 }
@@ -115,7 +124,7 @@
 	.input-tel,
 	.input-email {
 		padding-left: 23px;
-		width: 377px;
+		max-width: 377px;
 		height: 39px;
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 20px;
@@ -127,9 +136,9 @@
 	}
 
 	.list__btn {
-		line-height: 23.44px;
 		color: var(--white-color);
 		font-size: 20px;
+		line-height: 23.44px;
 		padding: 11px 38px;
 		background-color: rgba(21, 169, 203, 1);
 		border-radius: 50px;
@@ -196,9 +205,9 @@
 	}
 
 	.list__btn {
-		line-height: 18.75px;
 		color: rgba(255, 255, 255, 1);
 		font-size: 16px;
+		line-height: 18.75px;
 		padding: 10px 26px;
 		background-color: rgba(21, 169, 203, 1);
 		border-radius: 50px;
@@ -231,36 +240,57 @@
 @media screen and (max-width: 320px) {
 	.list {
 		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-bottom: 28px;
+	}
+	.container {
+		width: 290px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.list__title {
-		margin-bottom: 10px;
+		display: none;
+	}
+
+	.list__title-media {
+		display: block;
+		width: 223.77px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 11px;
 		font-size: 20px;
+		font-weight: 700;
 		line-height: 23.44px;
 	}
 
-	.list__text {
+	.list__text-media {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 35px;
 		font-size: 12px;
 		line-height: 14.06px;
 	}
 
+	.list__text {
+		display: none;
+	}
+
 	.input-name,
 	.input-tel {
-		margin-bottom: 15px;
+		margin-bottom: 11px;
 	}
 
 	.input-email {
-		margin-bottom: 45px;
+		margin-bottom: 44px;
 	}
 
 	.input-name,
 	.input-tel,
 	.input-email {
-		padding-left: 29px;
+		padding-left: 16px;
 		width: 290px;
-		height: 28px;
+		height: 30px;
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 14px;
 		font-weight: 400;
@@ -274,7 +304,7 @@
 		line-height: 18.75px;
 		color: var(--white-color);
 		font-size: 16px;
-		padding: 10px 26px;
+		padding: 10px 30px;
 		background-color: rgba(21, 169, 203, 1);
 		border-radius: 50px;
 	}

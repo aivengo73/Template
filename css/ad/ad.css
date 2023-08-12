@@ -1,6 +1,6 @@
 .ad {
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 75px;
 	background-color: rgba(249, 249, 249, 1);
 }
 
@@ -10,7 +10,7 @@
 }
 
 .ad__title {
-	margin-bottom: 86px;
+	margin-bottom: 27px;
 	color: var(--grey-color);
 	font-weight: 700;
 	font-size: 35px;
@@ -29,10 +29,10 @@
 	display: block;
 	position: absolute;
 	content: "";
-	width: 40px;
+	width: 43px;
 	height: 2px;
-	top: 140px;
-	left: 54%;
+	top: 79px;
+	left: 54.2%;
 	background-color: var(--grey-color);
 }
 
@@ -40,17 +40,18 @@
 	display: block;
 	position: absolute;
 	content: "";
-	width: 40px;
+	width: 43px;
 	height: 2px;
 	left: 42%;
-	top: 140px;
+	top: 79px;
 	background-color: var(--grey-color);
 }
 
 .ad__text {
-	display: flex;
-	align-items: center;
-  margin-bottom: 50px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+  margin-bottom: 56px;
 	color: var(--grey-color);
 	font-size: 18px;
 	line-height: 25.31px;
@@ -58,7 +59,10 @@
 
 .ad__items {
 	grid-template-columns: repeat(4, 1fr);
-	column-gap: 50px;
+	column-gap: 60px;
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .ad__item {
@@ -74,7 +78,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 16px;
+	margin-bottom: 18px;
 	width: 122px;
 	height: 122px;
 	color: #fff;
@@ -92,7 +96,7 @@
 	justify-content: center;
 	color: #000;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 25.31px;
 }
 
@@ -107,12 +111,23 @@
 /* !! ========== 1024px ====== */
 
 @media screen and (max-width: 1024px) {
+
+	.ad {
+		padding-top: 70px;
+		padding-bottom: 73px;
+	}
 	.ad__title {
+		max-width: 900px;
 		margin-bottom: 23px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 32px;
+		line-height: 37.5px;
+		font-weight: 600;
 	}
 
 	.ad__about-us {
-		margin-bottom: 33px;
+		margin-bottom: 32px;
 		font-size: 20px;
 		line-height: 23.44px;
 	}
@@ -121,7 +136,7 @@
 		display: block;
 		position: absolute;
 		content: "";
-		top: 77px;
+		top: 71.5px;
 		left: 55%;
 	}
 
@@ -130,13 +145,22 @@
 		position: absolute;
 		content: "";
 		left: 41%;
-		top: 77px;
+		top: 71.5px;
 	}
 
 	.ad__text {
-		margin-bottom: 33px;
+		max-width: 666px;
+		margin-bottom: 57px;
+		margin-left: auto;
+		margin-right: auto;
 		font-size: 16px;
 		line-height: 22.5px;
+	}
+
+	.ad__items {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 856px;
 	}
 
 	.ad__item-span {
@@ -149,8 +173,8 @@
 
 	.ad__item-paragraph {
 		margin-bottom: 0;
-		font-size: 20px;
-		line-height: 28.13px;
+		font-size: 18px;
+		line-height: 25.31px;
 	}
 }
 
@@ -228,10 +252,10 @@
 	}
 
 	.ad__about-us::after {
-		width: 40px;
-		height: 1.5px;
 		left: 39%;
 		top: 116px;
+		width: 40px;
+		height: 1.5px;
 	}
 }
 
@@ -239,17 +263,17 @@
 
 @media screen and (max-width: 664px) {
 	.ad__about-us::before {
-		width: 36px;
-		height: 1.5px;
 		top: 115px;
 		left: 56.5%;
+		width: 36px;
+		height: 1.5px;
 	}
 
 	.ad__about-us::after {
-		width: 36px;
-		height: 1.5px;
 		top: 115px;
 		left: 37%;
+		width: 36px;
+		height: 1.5px;
 	}
 }
 
@@ -262,17 +286,17 @@
 	}
 
 	.ad__about-us::before {
-		width: 36px;
-		height: 2px;
 		top: 116px;
 		left: 56.5%;
+		width: 36px;
+		height: 2px;
 	}
 
 	.ad__about-us::after {
-		width: 36px;
-		height: 2px;
 		top: 116px;
 		left: 37%;
+		width: 36px;
+		height: 2px;
 	}
 
 	.ad__items {
@@ -292,17 +316,17 @@
 		line-height: 41.02px;
 	}
 	.ad__about-us::before {
-		width: 36px;
-		height: 2px;
 		top: 127px;
 		left: 56.5%;
+		width: 36px;
+		height: 2px;
 	}
 
 	.ad__about-us::after {
-		width: 36px;
-		height: 2px;
 		top: 127px;
 		left: 36%;
+		width: 36px;
+		height: 2px;
 	}
 }
 
@@ -310,17 +334,17 @@
 
 @media screen and (max-width: 514px) {
 	.ad__about-us::before {
-		width: 36px;
-		height: 2px;
 		top: 127px;
 		left: 57%;
+		width: 36px;
+		height: 2px;
 	}
 
 	.ad__about-us::after {
-		width: 36px;
-		height: 2px;
 		top: 127px;
 		left: 35%;
+		width: 36px;
+		height: 2px;
 	}
 }
 
@@ -328,17 +352,17 @@
 
 @media screen and (max-width: 480px) {
 	.ad__about-us::before {
-		width: 36px;
-		height: 2px;
 		top: 127px;
 		left: 58%;
+		width: 36px;
+		height: 2px;
 	}
 
 	.ad__about-us::after {
-		width: 36px;
-		height: 2px;
 		top: 127px;
 		left: 33%;
+		width: 36px;
+		height: 2px;
 	}
 
 	.ad__items {
@@ -354,17 +378,17 @@
 
 @media screen and (max-width: 450px) {
 	.ad__about-us::before {
-		width: 36px;
-		height: 2px;
 		top: 168px;
 		left: 60%;
+		width: 36px;
+		height: 2px;
 	}
 
 	.ad__about-us::after {
-		top: 168px;
-		width: 36px;
-		height: 2px;
 		left: 30%;
+		top: 168px;
+		height: 2px;
+		width: 36px;
 	}
 }
 
@@ -372,17 +396,17 @@
 
 @media screen and (max-width: 390px) {
 	.ad__about-us::before {
-		width: 36px;
-		height: 2px;
 		top: 210px;
 		left: 61%;
+		width: 36px;
+		height: 2px;
 	}
 
 	.ad__about-us::after {
 		top: 210px;
+		left: 28%;
 		width: 36px;
 		height: 2px;
-		left: 28%;
 	}
 }
 
@@ -390,17 +414,17 @@
 
 @media screen and (max-width: 346px) {
 	.ad__about-us::before {
-		width: 36px;
-		height: 1.5px;
 		top: 210px;
 		left: 62%;
+		width: 36px;
+		height: 1.5px;
 	}
 
 	.ad__about-us::after {
-		width: 36px;
-		height: 1.5px;
 		top: 210px;
 		left: 26%;
+		width: 36px;
+		height: 1.5px;
 	}
 }
 
@@ -409,43 +433,52 @@
 @media screen and (max-width: 320px) {
 	.ad {
 		padding-top: 30px;
-		padding-bottom: 60px;
+		padding-bottom: 62px;
 	}
 
 	.ad__title {
-		margin-bottom: 15px;
+		width: 287.07px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 17px;
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 23.44px;
 	}
 
+	.ad__text {
+		width: 286.05px;
+		margin-bottom: 40px;
+		font-size: 12px;
+		font-weight: 400;
+		text-align: center;
+		line-height: 16.88px;
+	}
+
 	.ad__about-us {
-		margin-bottom: 26px;
-		font-weight: 500;
+		margin-bottom: 30px;
+		width: 286px;
 		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
 		line-height: 18.75px;
 	}
 
 	.ad__about-us::before {
+		top: 74px;
+		left: 67%;
 		width: 19.71px;
 		height: 1px;
-		top: 95px;
-		left: 61.5%;
 	}
 
 	.ad__about-us::after {
+		top: 74px;
+		left: 27%;
 		width: 19.71px;
 		height: 1px;
-		left: 31%;
-		top: 95px;
 	}
 
-	.ad__text {
-		margin-bottom: 40px;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 16.88px;
-	}
+
 
 	.ad__item {
 		display: none;
@@ -455,22 +488,23 @@
 
 	.wrapper {
 		display: block;
-		width: 100%;
-		height: 100%;
 		margin-left: auto;
 		margin-right: auto;
+		width: 100%;
+		height: 100%;
 	}
 
 	.slider {
 		position: relative;
+		width: 290px;
 		padding: 0 10px;
-		min-width: 0
+		min-width: 0;
 	}
 
 	.slider__item {
 		display: flex;
 		flex-direction: column;
-    width: 160px;
+    width: 166.57px;
 		height: auto;
 		text-align: center;
 		align-items: center;
@@ -478,9 +512,9 @@
 
 	.slider__item-span {
 		display: flex;
-		align-items: center;
 		justify-content: center;
-		margin-bottom: 16px;
+		align-items: center;
+		margin-bottom: 26px;
 		width: 104px;
 		height: 104px;
 		font-size: 52px;
@@ -500,8 +534,8 @@
 		max-width: 165px;
 		color: #000;
 		font-weight: 500;
-		font-size: 16px;
-		line-height: 24.13px;
+		font-size: 18px;
+		line-height: 25.31px;
 	}
 
 	/* Ограничивающая оболочка */
@@ -517,15 +551,15 @@
 
 	.slider .slick-arrow {
 		position: absolute;
-		top: 35%;
-		width: 68px;
-		height: 68px;
+		top: 30.8%;
+		height: 78px;
+		width: 78px;
 		font-size: 0;
 	}
 
 	/* Стрелка влево */
 	.slider .slick-arrow.slick-prev {
-		left: -30px;
+		left: -14px;
 		background: url("/../css/ad/img/Left.svg") 0 0 / 100% no-repeat;
 	}
 
@@ -535,7 +569,7 @@
 
 	/* Стрелка вправо */
 	.slider .slick-arrow.slick-next {
-		right: -30px;
+		right: -18px;
 		background: url("/../css/ad/img/Right.svg") 0 0 / 100% no-repeat;
 	}
 }
